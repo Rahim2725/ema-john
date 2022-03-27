@@ -1,5 +1,18 @@
+.cart{
+    position: sticky;
+    top: 0px;
+    padding: 30px 0px;
+}
+
 .cart h3{
+    margin: 0;
+    margin-bottom: 50px;
     font-size: 20px;
     display: flex;
     justify-content: center;
 }   
+.cart h4{
+    font-size: 18px;
+    font-weight: 700;
+
+}
