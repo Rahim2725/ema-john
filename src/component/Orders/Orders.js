@@ -5,6 +5,7 @@ import useProduct from '../../hooks/useProduct';
 import { removeFromDb } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
+import './Orders.css'
 
 const Orders = () => {
     const [products, setProducts] = useProduct();
@@ -27,8 +28,8 @@ const Orders = () => {
             </div>
             <div className="cart-container">
                 <Cart cart={cart}>
-                    <Link to="/orders">
-                        <button>Oreder Reviews</button>
+                    <Link to="/inventory">
+                        <button>Proceed Checkout</button>
                     </Link>
                 </Cart>
             </div>
