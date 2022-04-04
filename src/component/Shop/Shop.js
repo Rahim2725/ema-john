@@ -9,7 +9,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useProduct();
     const [cart, setCart] = useCart(products);
-    
+
     const handlAddToCart = (selectedProduct) => {
         console.log(selectedProduct)
         let newCart = [];
@@ -38,9 +38,9 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                {/* <h2>Order Summary  </h2>
-                <p>Selected Items: {cart.length}</p> */}
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+                    <p>tis shop content</p>
+                </Cart>
             </div>
         </div>
     );
